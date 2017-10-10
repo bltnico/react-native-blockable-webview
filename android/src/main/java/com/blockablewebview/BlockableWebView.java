@@ -14,7 +14,7 @@ import java.util.List;
  * Created by seemann on 01/11/16.
  */
 public class BlockableWebView implements ReactPackage {
-    @Override
+    // Depreciated RN 0.47
     public List<Class<? extends JavaScriptModule>> createJSModules() {
         return Collections.emptyList();
     }
