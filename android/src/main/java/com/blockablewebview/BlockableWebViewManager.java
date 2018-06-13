@@ -19,6 +19,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Picture;
 import android.net.Uri;
+import android.view.View;
 import android.os.Build;
 import android.text.TextUtils;
 import android.view.ViewGroup.LayoutParams;
@@ -300,6 +301,7 @@ public class BlockableWebViewManager extends SimpleViewManager<WebView> {
          */
         public BlockableWebView(ThemedReactContext reactContext) {
             super(reactContext);
+            this.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
         }
 
         @Override
