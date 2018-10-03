@@ -71,7 +71,7 @@ RCT_EXPORT_METHOD(goForward:(nonnull NSNumber *)reactTag)
     if (![view isKindOfClass:[BlockableWebView class]]) {
       RCTLogError(@"Invalid view returned from registry, expecting BlockableWebView, got: %@", view);
     } else {
-      [view goForward];
+      [((BlockableWebView*)view) goForward];
     }
   }];
 }
